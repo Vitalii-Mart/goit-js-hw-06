@@ -6,9 +6,14 @@ formEl.addEventListener("submit", (e) => {
     elements: { email, password },
   } = e.currentTarget;
   console.log(`Email: ${email.value}, Password: ${password.value}`);
-
+ 
   if (email.value === `` || password.value === ``) {
     alert("Всі поля повинні бути заповнені!");
   }
+  else{
+    alert("Ласкаво просимо!")
+  }
   e.currentTarget.reset();
+  
+  
 });

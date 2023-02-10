@@ -5,13 +5,11 @@ formEl.addEventListener("submit", (e) => {
   const {
     elements: { email, password },
   } = e.currentTarget;
-
   if (email.value === `` || password.value === ``) {
-    alert("Всі поля повинні бути заповнені!");
-  } else {
-    console.log(`Email: ${email.value}, Password: ${password.value}`);
-    alert("Ласкаво просимо!");
+    return alert("Всі поля повинні бути заповнені!");
   }
+  console.log(`Email: ${email.value}, Password: ${password.value}`);
+
   e.currentTarget.reset();
 });
 
@@ -27,4 +25,4 @@ formEl.addEventListener("submit", (e) => {
 // formData.forEach((value, name) => {
 //   console.log("name", name);
 //   console.log("value", value);
-// });
+// });}
